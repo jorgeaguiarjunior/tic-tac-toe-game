@@ -1,0 +1,57 @@
+/*Zero todo o espaçamento que possa ter na tela do navegador e defino a fonte como arial*/
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: arial;
+}
+
+/*Defino o corpo da minha pagina ocupando todo o espaço, ou seja, 100vw e 100vh, 
+defino o display como flex e alinho todos os elementos no centro da pagina, 
+deixando eles orientados como colunas com o atributo flex-direction:  column*/
+body{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/*Defino a div do meu tabuleiro com o display grid para deixar todos os elementos orientados em uma grade
+deixo o template das colunas como automatico*/
+#tabuleiro{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	width: 570px;
+	height: 570px;
+}
+
+/*Defino cada posição do tabuleiro com display flex para alinhar o texto no centro,
+altero o ponteiro para ficar mais didatico*/
+.posi{
+	width: 190px;
+	height: 190px;
+	box-sizing: border-box;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 150px;
+	cursor: pointer;
+}
+
+/*Deixo a mensagem informativa em negrit e fonte 20px*/
+#mensagem{
+	height: 20px;
+	font-weight: bold;
+}
+
+/*Botão para reiniciar*/
+#reiniciar{
+	margin: 5px;
+	height: 40px;
+	width: 120px;
+}
+
+
+
